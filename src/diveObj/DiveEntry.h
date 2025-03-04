@@ -13,8 +13,7 @@ namespace diveObj {
 
 class DiveEntry {
 public:
-    DiveEntry();
-    explicit DiveEntry(int _index);
+    explicit DiveEntry();
     ~DiveEntry();
 
     [[nodiscard]] int get_index() const {
@@ -74,13 +73,13 @@ public:
     }
 
 private:
-    int index;
+    int index{};
     string name;
     chrono::system_clock::time_point lastUpdated;
-    time_t timeOfDive;
-    int maxDepth; // In feet
-    int totalDiveTime; // In minutes
-    float percentOxygen;
+    time_t timeOfDive{};
+    int maxDepth{}; // In feet
+    int totalDiveTime{}; // In minutes
+    float percentOxygen{};
 
 };
 

@@ -8,11 +8,7 @@ using namespace std;
 
 namespace diveObj {
     DiveEntry::DiveEntry() {
-        DiveEntry(-1);
-    }
-
-    DiveEntry::DiveEntry(int _index) {
-        index = _index;
+        index = -1;
         name = "";
         lastUpdated = std::chrono::system_clock::now();
         timeOfDive = std::chrono::system_clock::to_time_t(lastUpdated); // Let them update later
@@ -21,8 +17,7 @@ namespace diveObj {
         percentOxygen = 21.0;
     }
 
-    DiveEntry::~DiveEntry() {
-    }
+    DiveEntry::~DiveEntry() = default;
 
 
 } // diveObj

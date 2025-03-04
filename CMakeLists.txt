@@ -7,4 +7,5 @@ add_executable(ScubaDemo src/main.cpp
         src/diveObj/DiveEntry.cpp
         src/diveObj/DiveEntry.h
         src/diveObj/DiveLog.cpp
-        src/diveObj/DiveLog.h)
+        src/diveObj/DiveLog.h
+        src/main.h)
